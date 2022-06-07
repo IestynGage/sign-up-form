@@ -1,5 +1,11 @@
-function App() {
-  return <div className="App"></div>;
-}
+import { CodeByWatchingInfoBox } from "../Components/CodeByWatchingInfoBox/CodeByWatchingInfoBox";
+import SignUpCard from "../Components/SignUpCard/SignUpCard";
 
-export default App;
+export default function SignUpPage() {
+  return (
+    <div className="SignUpPage">
+      <CodeByWatchingInfoBox />
+      <SignUpCard />
+    </div>
+  );
+}

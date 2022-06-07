@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react';
-import SignUpPage from './SignUpPage';
+import { render } from "@testing-library/react";
+import SignUpPage from "./SignUpPage";
 
-test('can render ', () => {
+test("can render ", () => {
   render(<SignUpPage />);
 });
