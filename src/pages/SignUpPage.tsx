@@ -1,3 +1,5 @@
+import "./SignUpPage.css";
+
 import Button from "../Components/Button/Button";
 import { CodeByWatchingInfoBox } from "../Components/CodeByWatchingInfoBox/CodeByWatchingInfoBox";
 import SignUpCard from "../Components/SignUpCard/SignUpCard";

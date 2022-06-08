@@ -1,0 +1,5 @@
+.SignUpPage {
+  background-color: var(--primary-red);
+  min-height: 100vh;
+  background-image: url("../assets/bg-intro-desktop.png");
+}
