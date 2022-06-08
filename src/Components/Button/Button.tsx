@@ -5,5 +5,5 @@ export interface ButtonProps {
 }
 
 export default function Button({ label }: ButtonProps) {
-  return <button> {label}</button>;
+  return <button className="w-80 shadow rounded"> {label}</button>;
 }

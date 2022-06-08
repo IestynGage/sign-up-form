@@ -3,7 +3,7 @@ import FormField from "../FormField/FormField";
 
 export default function SignUpCard() {
   return (
-    <div>
+    <div className="w-96 bg-white shadow-md rounded">
       <FormField label="First Name" />
       <FormField label="Last Name" />
       <FormField label="Email" inputType={"email"} />
