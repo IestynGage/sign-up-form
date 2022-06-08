@@ -11,6 +11,9 @@ export interface FormFieldProps {
 /**
  * Generic component to display a form field
  */
-export default function FormField({ label = "", inputType }: FormFieldProps) {
-  return <input type={inputType}> {label} </input>;
+export default function FormField({
+  label = "",
+  inputType = "text",
+}: FormFieldProps) {
+  return <input type={inputType} placeholder={label} />;
 }

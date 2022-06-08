@@ -17,7 +17,6 @@ export default function SignUpCard() {
 export function TermsAndCondition() {
   return (
     <p>
-      {" "}
       By clicking the button you are agreeing to our{" "}
       <a href="https://www.example.com"> Terms and services</a>
     </p>
