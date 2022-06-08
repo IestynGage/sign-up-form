@@ -8,7 +8,7 @@ export default function SignUpCard() {
       <FormField label="Last Name" />
       <FormField label="Email" inputType={"email"} />
       <FormField label="Password" inputType={"password"} />
-      <Button label="Claim your free trial" />
+      <Button className="w-80 shadow rounded" label="Claim your free trial" />
       <TermsAndCondition />
     </div>
   );

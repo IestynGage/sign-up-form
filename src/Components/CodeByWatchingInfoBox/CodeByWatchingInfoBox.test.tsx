@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { CodeByWatchingInfoBox } from "./CodeByWatchingInfoBox";
+import CodeByWatchingInfoBox from "./CodeByWatchingInfoBox";
 
 test("can render app", () => {
   render(<CodeByWatchingInfoBox />);

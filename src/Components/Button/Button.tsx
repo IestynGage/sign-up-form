@@ -1,9 +1,17 @@
-import FormField from "../FormField/FormField";
+import { CSSProperties } from "react";
+import "./Button.css";
 
 export interface ButtonProps {
+  className?: string;
   label?: string;
+  style?: CSSProperties;
 }
 
-export default function Button({ label }: ButtonProps) {
-  return <button className="w-80 shadow rounded"> {label}</button>;
+export default function Button({ className, label, style }: ButtonProps) {
+  return (
+    <button className={className} style={style}>
+      {" "}
+      {label}
+    </button>
+  );
 }
