@@ -1,0 +1,11 @@
+.termsAndCondition {
+  color: var(--neutral-grey-blue);
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.termsServiceAnchor {
+  color: var(--primary-red);
+  font-weight: 600;
+}

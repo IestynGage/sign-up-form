@@ -2,6 +2,7 @@ import "./SignUpCard.css";
 
 import Button from "../Button/Button";
 import FormField from "../FormField/FormField";
+import { TermsAndCondition } from "../TermsAndCondition/TermsAndCondition";
 
 export default function SignUpCard() {
   return (
@@ -17,14 +18,5 @@ export default function SignUpCard() {
         <TermsAndCondition />
       </div>
     </div>
-  );
-}
-
-export function TermsAndCondition() {
-  return (
-    <p>
-      By clicking the button you are agreeing to our{" "}
-      <a href="https://www.example.com"> Terms and services</a>
-    </p>
   );
 }
