@@ -17,5 +17,7 @@ export default function FormField({
   label = "",
   inputType = "text",
 }: FormFieldProps) {
-  return <input className="formField" type={inputType} placeholder={label} />;
+  return (
+    <input className="formField invalid" type={inputType} placeholder={label} />
+  );
 }

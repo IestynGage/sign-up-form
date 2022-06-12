@@ -14,3 +14,13 @@
   border-radius: 10px;
   font-weight: 600;
 }
+
+.invalid,
+.invalid:focus {
+  background: url("../../assets/icon-error.svg") no-repeat right;
+  background-size: 20px;
+  background-origin: content-box;
+  border: 1px solid var(--primary-red);
+  outline: 1px solid var(--primary-red);
+  color: var(--primary-red);
+}
