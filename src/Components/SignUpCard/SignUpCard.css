@@ -5,6 +5,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  gap: 25px;
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px;
+  padding: 40px 2% 40px 2%;
+  border-radius: 10px;
+}
+
+.freeTrailBttn {
+  width: 100%;
+  padding: 1.5ex;
+  background-color: var(--primary-green);
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px;
+  color: white;
+  font-weight: 500;
 }

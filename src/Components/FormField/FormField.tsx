@@ -1,3 +1,5 @@
+import "./FormField.css";
+
 import { HTMLInputTypeAttribute } from "react";
 
 export interface FormFieldProps {
@@ -15,5 +17,5 @@ export default function FormField({
   label = "",
   inputType = "text",
 }: FormFieldProps) {
-  return <input type={inputType} placeholder={label} />;
+  return <input className="formField" type={inputType} placeholder={label} />;
 }

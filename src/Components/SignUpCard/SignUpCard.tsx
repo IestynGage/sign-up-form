@@ -10,8 +10,12 @@ export default function SignUpCard() {
       <FormField label="Last Name" />
       <FormField label="Email" inputType={"email"} />
       <FormField label="Password" inputType={"password"} />
-      <Button className="w-80 shadow rounded">{"Claim your free trial"}</Button>
-      <TermsAndCondition />
+      <div style={{ width: "100%" }}>
+        <Button className="shadow rounded freeTrailBttn">
+          {"CLAIM YOUR FREE TRIAL"}
+        </Button>
+        <TermsAndCondition />
+      </div>
     </div>
   );
 }

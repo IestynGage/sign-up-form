@@ -1,5 +1,4 @@
-import { Children, CSSProperties } from "react";
-import "./Button.css";
+import { CSSProperties } from "react";
 
 export interface ButtonProps {
   className?: string;
