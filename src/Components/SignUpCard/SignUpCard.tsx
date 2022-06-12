@@ -17,11 +17,11 @@ export default function SignUpCard() {
 
   function checkValidForm() {
     if (
-      firstName.trim() != "" &&
-      lastName.trim() != "" &&
-      emailRegEx.exec(email.trim()) != null &&
-      email.trim() != "" &&
-      password.trim() != ""
+      firstName.trim() !== "" &&
+      lastName.trim() !== "" &&
+      emailRegEx.exec(email.trim()) !== null &&
+      email.trim() !== "" &&
+      password.trim() !== ""
     ) {
       setValid(true);
     } else {
@@ -50,7 +50,7 @@ export default function SignUpCard() {
         onChange={setEmail}
         validFormField={valid}
         errorMessage={
-          email != "" && emailRegEx.exec(email.trim()) == null
+          email !== "" && emailRegEx.exec(email.trim()) === null
             ? "This doesn't look like a email"
             : undefined
         }
