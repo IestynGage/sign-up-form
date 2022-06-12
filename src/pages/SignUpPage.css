@@ -8,8 +8,36 @@
   flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .SignUpPage {
     flex-direction: column;
   }
+}
+
+.SignUpItem {
+  flex-basis: 100%;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.rightItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.tryFreeButton {
+  background-color: var(--accent-blue);
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5ex;
+  margin-bottom: 2ex;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px;
+}
+
+.boldBttnText {
+  font-weight: 600;
 }

@@ -1,14 +1,16 @@
+import "./SignUpCard.css";
+
 import Button from "../Button/Button";
 import FormField from "../FormField/FormField";
 
 export default function SignUpCard() {
   return (
-    <div className="w-96 bg-white shadow-md rounded">
+    <div className="card bg-white shadow-md rounded">
       <FormField label="First Name" />
       <FormField label="Last Name" />
       <FormField label="Email" inputType={"email"} />
       <FormField label="Password" inputType={"password"} />
-      <Button className="w-80 shadow rounded" label="Claim your free trial" />
+      <Button className="w-80 shadow rounded">{"Claim your free trial"}</Button>
       <TermsAndCondition />
     </div>
   );

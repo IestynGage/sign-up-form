@@ -1,5 +1,5 @@
 .heading {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
 }
@@ -8,4 +8,26 @@
   font-size: 16px;
   font-weight: 300;
   color: white;
+}
+
+.mainDiv {
+  padding: 32px;
+  max-width: 600px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainDiv {
+    text-align: center;
+    padding: 40px 12px 0 12px;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .depthExplanation {
+    margin-bottom: 12px;
+  }
 }
