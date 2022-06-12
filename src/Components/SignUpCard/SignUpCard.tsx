@@ -32,33 +32,35 @@ export default function SignUpCard() {
   return (
     <div className="card bg-white shadow-md rounded">
       <FormField
-        placeholder="First Name"
+        label="First Name"
         value={firstName}
         onChange={setFirstName}
-        validFormField={valid && firstName.trim() != ""}
+        validFormField={valid}
       />
       <FormField
-        placeholder="Last Name"
+        label="Last Name"
         value={lastName}
         onChange={setLastName}
-        validFormField={valid && lastName.trim() == ""}
+        validFormField={valid}
       />
       <FormField
-        placeholder="Email"
+        label="Email"
         inputType={"email"}
         value={email}
         onChange={setEmail}
-        validFormField={
-          valid &&
-          !(emailRegEx.exec(email.trim()) != null && email.trim() != "")
+        validFormField={valid}
+        errorMessage={
+          email != "" && emailRegEx.exec(email.trim()) == null
+            ? "This doesn't look like a email"
+            : undefined
         }
       />
       <FormField
-        placeholder="Password"
+        label="Password"
         inputType={"password"}
         value={password}
         onChange={setPassword}
-        validFormField={valid && password.trim() == ""}
+        validFormField={valid}
       />
       <div style={{ width: "100%" }}>
         <Button

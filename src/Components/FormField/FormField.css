@@ -24,3 +24,12 @@
   outline: 1px solid var(--primary-red);
   color: var(--primary-red);
 }
+
+.invalidText {
+  color: var(--primary-red);
+  font-weight: 600;
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 8px;
+}
