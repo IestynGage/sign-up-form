@@ -14,6 +14,11 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .SignUpPage {
+    background-image: url("../assets/bg-intro-mobile.png");
+  }
+}
 .SignUpItem {
   flex-basis: 100%;
   text-align: center;

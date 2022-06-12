@@ -2,8 +2,8 @@ import "./SignUpCard.css";
 
 import Button from "../Button/Button";
 import FormField from "../FormField/FormField";
-import { TermsAndCondition } from "../TermsAndCondition/TermsAndCondition";
 import { useState } from "react";
+import { TermsAndCondition } from "../TermsAndCondition/TermsAndConditions";
 
 export default function SignUpCard() {
   const [firstName, setFirstName] = useState<string>("");

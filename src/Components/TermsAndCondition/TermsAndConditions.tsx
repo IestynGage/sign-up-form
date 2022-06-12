@@ -1,4 +1,4 @@
-import "./TermsAndCoditions.css";
+import "./TermsAndConditions.css";
 
 export function TermsAndCondition() {
   return (
