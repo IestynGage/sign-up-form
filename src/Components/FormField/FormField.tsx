@@ -3,21 +3,36 @@ import "./FormField.css";
 import { HTMLInputTypeAttribute } from "react";
 
 export interface FormFieldProps {
-  label?: string;
+  placeholder?: string;
 
   inputType?: HTMLInputTypeAttribute;
 
-  checkInput?: (formInput: string) => string;
+  validFormField?: boolean;
+
+  value?: string;
+
+  onChange?: (formInput: string) => void;
 }
 
 /**
  * Generic component to display a form field
  */
 export default function FormField({
-  label = "",
+  placeholder = "",
   inputType = "text",
+  validFormField = true,
+  value = "",
+  onChange,
 }: FormFieldProps) {
   return (
-    <input className="formField invalid" type={inputType} placeholder={label} />
+    <input
+      className={validFormField ? "formField" : "formField invalid:"}
+      type={inputType}
+      placeholder={validFormField ? placeholder : ""}
+      value={value}
+      onChange={(e) => {
+        onChange?.(e.target.value);
+      }}
+    />
   );
 }
