@@ -26,7 +26,7 @@ export default function FormField({
 }: FormFieldProps) {
   return (
     <input
-      className={validFormField ? "formField" : "formField invalid:"}
+      className={validFormField ? "formField" : "formField invalid"}
       type={inputType}
       placeholder={validFormField ? placeholder : ""}
       value={value}

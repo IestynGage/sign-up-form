@@ -11,32 +11,60 @@ export default function SignUpCard() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const [valid, setValid] = useState<boolean>();
+
+  const emailRegEx = /.*@.*\..*/;
+
+  function checkValidForm() {
+    if (
+      firstName.trim() != "" &&
+      lastName.trim() != "" &&
+      emailRegEx.exec(email.trim()) != null &&
+      email.trim() != "" &&
+      password.trim() != ""
+    ) {
+      setValid(true);
+    } else {
+      setValid(false);
+    }
+  }
+
   return (
     <div className="card bg-white shadow-md rounded">
       <FormField
         placeholder="First Name"
         value={firstName}
         onChange={setFirstName}
+        validFormField={valid && firstName.trim() != ""}
       />
       <FormField
         placeholder="Last Name"
         value={lastName}
         onChange={setLastName}
+        validFormField={valid && lastName.trim() == ""}
       />
       <FormField
         placeholder="Email"
         inputType={"email"}
         value={email}
         onChange={setEmail}
+        validFormField={
+          valid &&
+          !(emailRegEx.exec(email.trim()) != null && email.trim() != "")
+        }
       />
       <FormField
         placeholder="Password"
         inputType={"password"}
         value={password}
         onChange={setPassword}
+        validFormField={valid && password.trim() == ""}
       />
       <div style={{ width: "100%" }}>
-        <Button className="shadow rounded freeTrailBttn">
+        <Button
+          className="shadow rounded freeTrailBttn"
+          onClick={checkValidForm}
+        >
           {"CLAIM YOUR FREE TRIAL"}
         </Button>
         <TermsAndCondition />
