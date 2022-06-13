@@ -21,3 +21,4 @@ In the project directory, you can run:
 * `CodeByWatchingInfoBox.tsx` could be centered better
 * The CSS is a little bit of a mess
 * Probably shouldn't of tried to use tailwind.css and should have used plain css
+* Getting the form icons to display was a little bit of a dirty hack the ends up below text.
