@@ -1,6 +1,7 @@
 import "./CodeByWatchingInfoBox.css";
 
 export interface CodeByWatchingInfoBoxProps {
+  /** the class name of the info Box */
   className?: string;
 }
 
