@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Sign up form UI with bad input ](BadInput.png)
+
+![Sign up form](Example.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
